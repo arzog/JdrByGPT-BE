@@ -1,0 +1,10 @@
+openapi-processor-mapping: v2
+options:
+  package-name: jdr.mgmt.gpt.be
+map:
+  result: org.springframework.http.ResponseEntity
+  types:
+    - type: Pageable => org.springframework.data.domain.Pageable
+    - type: array => java.util.List
+    - type: Resource => org.springframework.core.io.Resource
+    - type: string:binary => org.springframework.core.io.Resource
